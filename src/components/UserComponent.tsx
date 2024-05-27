@@ -115,7 +115,7 @@ const UserComponent = () => {
           <TextAnimations textAnimations={textAnimations} />
         </div>
       </div>
-      <div className="flex flex-wrap gap-10 w-[800px] justify-center">
+      <div className="flex flex-wrap gap-10 max-w-[800px] justify-center">
         {buttons.map(animationInfo => {
           return (
             <button
