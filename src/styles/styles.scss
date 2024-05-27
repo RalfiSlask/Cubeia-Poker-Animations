@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import 'vendor/reset';
+
+body {
+  background-color: rgb(47, 45, 45);
+}
+
+.eurostile {
+  font-family: 'MyFont';
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-family: 'MyFont';
+}
+
+.teleport-text {
+  font-size: 2.75rem;
+  white-space: nowrap;
+  text-shadow: '10px 10px 0px black';
+}
+
+.teleport-text span {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.confetti-gradient {
+  background: -webkit-linear-gradient(90deg, #db7758 0%, rgba(0, 204, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.confetti-large-gradient {
+  background: -webkit-linear-gradient(90deg, #a8a8ed 0%, #e79ae2 50%, #ed83e2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../assets/fonts/Eurostile-LT-Std-Demi-Oblique_16309.ttf');
+}
