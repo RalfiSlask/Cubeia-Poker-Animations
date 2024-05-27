@@ -22,7 +22,7 @@ const SaberText: React.FC<{ color: string }> = ({ color }) => {
         textShadow: '0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.5)',
       }}
     >
-      <source src={`/saber-${color.toLowerCase()}.webm`} type="video/webm" />
+      <source src={`/Cubeia-Poker-Animations/saber-${color.toLowerCase()}.webm`} type="video/webm" />
       Your browser does not support the video tag.
     </motion.video>
   );

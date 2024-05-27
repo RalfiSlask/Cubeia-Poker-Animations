@@ -22,7 +22,7 @@ const BronzeText = () => {
         textShadow: '0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.5)',
       }}
     >
-      <source src="/bronze.webm" type="video/webm" />
+      <source src="/Cubeia-Poker-Animations/bronze.webm" type="video/webm" />
       Your browser does not support the video tag.
     </motion.video>
   );
