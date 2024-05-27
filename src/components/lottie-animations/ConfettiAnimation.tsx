@@ -10,7 +10,7 @@ const ConfettiAnimation = () => {
 
   const { View } = useLottie(options);
 
-  return <div className="bottom-30 absolute w-[250px] h-[100px] z-10">{View}</div>;
+  return <div className="bottom-30 absolute w-[450px] h-[100px] z-10">{View}</div>;
 };
 
 export default ConfettiAnimation;
