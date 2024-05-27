@@ -1,4 +1,4 @@
-# Cubeia Code Challenge
+# Cubeia Poker Animation Challenge
 
 ## Tech Stack
 
