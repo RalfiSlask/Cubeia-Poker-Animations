@@ -44,7 +44,7 @@ This project is marked as "Finished"
 
 ## Challenge Description
 
-This an extra code challenge from Cubeia to create poker animations on a limited amount of time. Focus is more on the animations rather then the coding part. 
+This is an extra code challenge from Cubeia to create poker animations on a limited amount of time. Focus is more on the animations rather then the coding part. 
 
 ## Features
 
@@ -54,7 +54,7 @@ This an extra code challenge from Cubeia to create poker animations on a limited
 
 ## Thoughts
 
-Did not want the animations to be to crazy so i chose to have more focus on the text rather than its surrounding elements. Can do a lot more in after effects in the future if necessary, also the colors could be more optimatized for the poker sites.
+Did not want the animations to be to crazy so i chose to have more focus on the text rather than its surrounding elements. Can do a lot more in after effects in the future if necessary, also the colors could be more optimatized for the poker sites. Took some time to find the possibility of exporting videos from after effects that work on the web, tried bodymovin extension with quicktime which works, but the support is limited on the web. I then found the solution of using webM with alpha included which worked.
 
 ### Future Improvments 
 
