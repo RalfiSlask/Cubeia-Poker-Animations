@@ -16,7 +16,11 @@ import TextAnimations from './TextAnimations';
 import { IButtonType } from '../utils/types/types';
 import ParticleAnimation from './lottie-animations/ParticleAnimation';
 
+import { TestClass } from '../class';
+
 const UserComponent = () => {
+  console.log(new TestClass().name);
+
   const [textAnimations, setTextAnimations] = useState([
     { id: 1, type: 'scale', active: false },
     { id: 2, type: 'side', active: false },
