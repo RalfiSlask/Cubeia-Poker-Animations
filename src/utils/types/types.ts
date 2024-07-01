@@ -9,6 +9,7 @@ export interface IAnimationType {
   8: boolean;
   9: boolean;
   10: boolean;
+  11: boolean;
 }
 
 export interface ITextAnimationType {

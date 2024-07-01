@@ -9,6 +9,11 @@ import ConfettiText from './text-animations/ConfettiText';
 import ConfettiLargeText from './text-animations/ConfettiLargeText';
 import ShootingText from './text-animations/ShootingText';
 import BronzeText from './text-animations/BronzeText';
+import PlayerBoxAnimation from './text-animations/PlayerBoxAnimation';
+import GoldStars from './text-animations/GoldStars';
+import FillingText from './text-animations/FillingText';
+import StarsParticles from './text-animations/StarsParticles';
+import EnergyCircleText from './text-animations/EnergyCircletext';
 
 const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ textAnimations }) => {
   return (
@@ -32,6 +37,27 @@ const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ te
       )}
       {textAnimations.find(text => text.type === 'shooting' && text.active === true) && <ShootingText />}
       {textAnimations.find(text => text.type === 'bronze' && text.active === true) && <BronzeText />}
+      {textAnimations.find(text => text.type === 'player box' && text.active === true) && (
+        <>
+          <GoldStars />
+          <PlayerBoxAnimation />
+        </>
+      )}
+      {textAnimations.find(text => text.type === 'filling' && text.active === true) && (
+        <>
+          <FillingText />
+        </>
+      )}
+      {textAnimations.find(text => text.type === 'particles' && text.active === true) && (
+        <>
+          <StarsParticles />
+        </>
+      )}
+      {textAnimations.find(text => text.type === 'energy' && text.active === true) && (
+        <>
+          <EnergyCircleText />
+        </>
+      )}
     </>
   );
 };

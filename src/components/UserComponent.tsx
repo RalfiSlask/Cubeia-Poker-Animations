@@ -16,11 +16,7 @@ import TextAnimations from './TextAnimations';
 import { IButtonType } from '../utils/types/types';
 import ParticleAnimation from './lottie-animations/ParticleAnimation';
 
-import { TestClass } from '../class';
-
 const UserComponent = () => {
-  console.log(new TestClass().name);
-
   const [textAnimations, setTextAnimations] = useState([
     { id: 1, type: 'scale', active: false },
     { id: 2, type: 'side', active: false },
@@ -33,6 +29,10 @@ const UserComponent = () => {
     { id: 9, type: 'confetti-large', active: false },
     { id: 10, type: 'shooting', active: false },
     { id: 11, type: 'bronze', active: false },
+    { id: 12, type: 'player box', active: false },
+    { id: 13, type: 'filling', active: false },
+    { id: 14, type: 'particles', active: false },
+    { id: 15, type: 'energy', active: false },
   ]);
   const [animations, setAnimations] = useState({
     1: false,
@@ -45,6 +45,7 @@ const UserComponent = () => {
     8: false,
     9: false,
     10: false,
+    11: false,
   });
 
   const playAnimationOnClick = (animationInfo: IButtonType) => {
@@ -67,12 +68,11 @@ const UserComponent = () => {
         setAnimations(prev => ({ ...prev, [animationId]: true }));
       }
     }, start);
-    setTimeout(
-      () => {
-        setTextAnimations(prev => prev.map(text => ({ ...text, active: false })));
-      },
-      textId === 3 ? 3500 : 3000
-    );
+
+    setTimeout(() => {
+      setTextAnimations(prev => prev.map(text => ({ ...text, active: false })));
+      console.log('textId:', textId);
+    }, 5000);
     setTimeout(() => {
       if (animationId) {
         setAnimations(prev => ({ ...prev, [animationId]: false }));
@@ -94,6 +94,10 @@ const UserComponent = () => {
     { textId: 4, title: 'Retro' },
     { textId: 5, title: 'Saber Purple' },
     { textId: 6, title: 'Saber Gold' },
+    { textId: 12, title: 'Player box' },
+    { textId: 13, title: 'Filling' },
+    { textId: 14, title: 'Sand stars' },
+    { textId: 15, title: 'Energy circle' },
   ];
 
   const anyAnimationActive =
