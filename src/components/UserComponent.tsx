@@ -35,6 +35,7 @@ const UserComponent = () => {
     { id: 15, type: 'energy', active: false },
     { id: 16, type: 'circle', active: false },
     { id: 17, type: 'gold', active: false },
+    { id: 18, type: 'player box stars', active: false },
   ]);
   const [animations, setAnimations] = useState({
     1: false,
@@ -102,6 +103,7 @@ const UserComponent = () => {
     { textId: 15, title: 'Energy circle' },
     { textId: 16, title: 'Circle star' },
     { textId: 17, title: 'Gold' },
+    { textId: 18, title: 'Player box stars' },
   ];
 
   const anyAnimationActive =

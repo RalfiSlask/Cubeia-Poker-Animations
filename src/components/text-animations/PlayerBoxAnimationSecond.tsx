@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const PlayerBoxAnimation = () => {
+const PlayerBoxAnimationSecond = () => {
   return (
     <motion.video
       className="uppercase absolute bottom-[-65px] w-[900px] h-[200px] right-2 z-20 flex items-center justify-center"
@@ -22,10 +22,10 @@ const PlayerBoxAnimation = () => {
         textShadow: '0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.5)',
       }}
     >
-      <source src="/Cubeia-Poker-Animations/playerbox.webm" type="video/webm" />
+      <source src="/Cubeia-Poker-Animations/playerboxstars.webm" type="video/webm" />
       Your browser does not support the video tag.
     </motion.video>
   );
 };
 
-export default PlayerBoxAnimation;
+export default PlayerBoxAnimationSecond;

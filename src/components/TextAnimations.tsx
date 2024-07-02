@@ -15,6 +15,7 @@ import FillingText from './text-animations/FillingText';
 import StarsParticles from './text-animations/StarsParticles';
 import EnergyCircleText from './text-animations/EnergyCircletext';
 import CircleAnimationText from './text-animations/CircleAnimationText';
+import PlayerBoxAnimationSecond from './text-animations/PlayerBoxAnimationSecond';
 
 const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ textAnimations }) => {
   return (
@@ -66,6 +67,11 @@ const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ te
       {textAnimations.find(text => text.type === 'gold' && text.active === true) && (
         <>
           <GoldStars />
+        </>
+      )}
+      {textAnimations.find(text => text.type === 'player box stars' && text.active === true) && (
+        <>
+          <PlayerBoxAnimationSecond />
         </>
       )}
     </>
