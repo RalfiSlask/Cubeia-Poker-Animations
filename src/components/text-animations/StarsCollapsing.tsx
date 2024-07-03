@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const StarsCollapsing = () => {
   return (
     <motion.video
-      className="uppercase absolute bottom-[15px] w-[900px] h-[200px] left-2 z-20 flex items-center justify-center"
+      className="uppercase absolute bottom-[75px] w-[900px] h-[200px] z-20 flex items-center justify-center"
       initial={{ opacity: 0, filter: 'blur(4px)' }}
       animate={{
         opacity: [0, 1, 1, 0],
@@ -11,8 +11,8 @@ const StarsCollapsing = () => {
         filter: ['blur(1px)', 'blur(0px)', 'blur(0px)', 'blur(1px)'],
       }}
       transition={{
-        opacity: { times: [0, 0.2, 0.95, 1], duration: 5 },
-        filter: { times: [0, 0.2, 0.95, 1], duration: 5 },
+        opacity: { times: [0, 0.2, 0.95, 1], duration: 4 },
+        filter: { times: [0, 0.2, 0.95, 1], duration: 4 },
       }}
       autoPlay
       loop

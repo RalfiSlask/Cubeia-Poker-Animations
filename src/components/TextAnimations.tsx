@@ -77,6 +77,7 @@ const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ te
       )}
       {textAnimations.find(text => text.type === 'collapsing' && text.active === true) && (
         <>
+          {/*           <PlayerBoxAnimationSecond /> */}
           <StarsCollapsing />
         </>
       )}
