@@ -37,6 +37,7 @@ const UserComponent = () => {
     { id: 17, type: 'gold', active: false },
     { id: 18, type: 'player box stars', active: false },
     { id: 19, type: 'collapsing', active: false },
+    { id: 20, type: 'bouncy', active: false },
   ]);
   const [animations, setAnimations] = useState({
     1: false,
@@ -75,8 +76,7 @@ const UserComponent = () => {
 
     setTimeout(() => {
       setTextAnimations(prev => prev.map(text => ({ ...text, active: false })));
-      console.log('textId:', textId);
-    }, 5000);
+    }, 4000);
     setTimeout(() => {
       if (animationId) {
         setAnimations(prev => ({ ...prev, [animationId]: false }));
@@ -106,6 +106,7 @@ const UserComponent = () => {
     { textId: 17, title: 'Gold' },
     { textId: 18, title: 'Player box stars' },
     { textId: 19, title: 'Collapsing stars' },
+    { textId: 20, title: 'Bouncy Text' },
   ];
 
   const anyAnimationActive =

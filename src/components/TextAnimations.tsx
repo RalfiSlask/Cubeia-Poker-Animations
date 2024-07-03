@@ -17,6 +17,7 @@ import EnergyCircleText from './text-animations/EnergyCircletext';
 import CircleAnimationText from './text-animations/CircleAnimationText';
 import PlayerBoxAnimationSecond from './text-animations/PlayerBoxAnimationSecond';
 import StarsCollapsing from './text-animations/StarsCollapsing';
+import BouncyText from './text-animations/BouncyText';
 
 const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ textAnimations }) => {
   return (
@@ -81,6 +82,7 @@ const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ te
           <StarsCollapsing />
         </>
       )}
+      {textAnimations.find(text => text.type === 'bouncy' && text.active === true) && <BouncyText />}
     </>
   );
 };
