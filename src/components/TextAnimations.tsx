@@ -16,6 +16,7 @@ import StarsParticles from './text-animations/StarsParticles';
 import EnergyCircleText from './text-animations/EnergyCircletext';
 import CircleAnimationText from './text-animations/CircleAnimationText';
 import PlayerBoxAnimationSecond from './text-animations/PlayerBoxAnimationSecond';
+import StarsCollapsing from './text-animations/StarsCollapsing';
 
 const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ textAnimations }) => {
   return (
@@ -72,6 +73,11 @@ const TextAnimations: React.FC<{ textAnimations: ITextAnimationType[] }> = ({ te
       {textAnimations.find(text => text.type === 'player box stars' && text.active === true) && (
         <>
           <PlayerBoxAnimationSecond />
+        </>
+      )}
+      {textAnimations.find(text => text.type === 'collapsing' && text.active === true) && (
+        <>
+          <StarsCollapsing />
         </>
       )}
     </>

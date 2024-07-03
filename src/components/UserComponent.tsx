@@ -36,6 +36,7 @@ const UserComponent = () => {
     { id: 16, type: 'circle', active: false },
     { id: 17, type: 'gold', active: false },
     { id: 18, type: 'player box stars', active: false },
+    { id: 19, type: 'collapsing', active: false },
   ]);
   const [animations, setAnimations] = useState({
     1: false,
@@ -104,6 +105,7 @@ const UserComponent = () => {
     { textId: 16, title: 'Circle star' },
     { textId: 17, title: 'Gold' },
     { textId: 18, title: 'Player box stars' },
+    { textId: 19, title: 'Collapsing stars' },
   ];
 
   const anyAnimationActive =
