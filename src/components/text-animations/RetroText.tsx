@@ -11,8 +11,8 @@ const RetroText = () => {
         filter: ['blur(1px)', 'blur(0px)', 'blur(0px)', 'blur(1px)'],
       }}
       transition={{
-        opacity: { times: [0, 0.2, 0.95, 1], duration: 3 },
-        filter: { times: [0, 0.2, 0.95, 1], duration: 3 },
+        opacity: { times: [0, 0.2, 0.95, 1], duration: 4 },
+        filter: { times: [0, 0.2, 0.95, 1], duration: 4 },
       }}
       autoPlay
       loop
