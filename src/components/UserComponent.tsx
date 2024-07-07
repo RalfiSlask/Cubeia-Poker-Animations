@@ -16,6 +16,7 @@ import TextAnimations from './TextAnimations';
 import { IButtonType } from '../utils/types/types';
 import ParticleAnimation from './lottie-animations/ParticleAnimation';
 
+
 const UserComponent = () => {
   const [textAnimations, setTextAnimations] = useState([
     { id: 1, type: 'scale', active: false },
@@ -94,7 +95,7 @@ const UserComponent = () => {
     { animationId: 7, textId: 9, start: 200, end: 1800, title: 'Confetti Large' },
     { animationId: 8, textId: 10, start: 600, end: 2300, title: 'Shooting Star' },
     { animationId: 9, textId: 11, start: 0, end: 3000, title: 'Stars Fading' },
-    { animationId: 10, textId: 7, start: 0, end: 3000, title: 'Particle sweep' },
+    { textId: 7, start: 0, end: 3000, title: 'Particle sweep' },
     { textId: 4, title: 'Retro' },
     { textId: 5, title: 'Saber Purple' },
     { textId: 6, title: 'Saber Gold' },
@@ -108,6 +109,8 @@ const UserComponent = () => {
     { textId: 19, title: 'Collapsing stars' },
     { textId: 20, title: 'Bouncy Text' },
   ];
+
+  
 
   const anyAnimationActive =
     textAnimations.some(animation => animation.active) || Object.values(animations).some(active => active);
